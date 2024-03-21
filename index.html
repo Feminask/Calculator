@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculaor.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form >
+                <div class="Display">
+                    <input type="text" name="display"placeholder='0' id="result" readonly>
+                </div>
+                <div>
+                    <button  type="button" onclick="allClear()">AC</button>
+                    <button type="button" onclick="deleteData()">DE</button>
+                    <button id="operators" type="button" onclick="displayData('.')">.</button>
+                    <button id="operators" type="button" onclick="displayData('/')">/</button>
+
+                </div>
+                <div>
+                    <button type="button" onclick="displayData(7)">7</button>
+                    <button type="button" onclick="displayData(8)">8</button>
+                    <button type="button" onclick="displayData(9)">9</button>
+                    <button id="operators" type="button" onclick="displayData('*')">x</button>
+
+                </div>
+                <div>
+                    <button type="button" onclick="displayData(4)">4</button>
+                    <button type="button" onclick="displayData(5)">5</button>
+                    <button type="button" onclick="displayData(6)">6</button>
+                    <button id="operators" type="button" onclick="displayData('-')">-</button>
+
+                </div>
+                <div>
+                    <button type="button" onclick="displayData(1)">1</button>
+                    <button type="button" onclick="displayData(2)">2</button>
+                    <button type="button" onclick="displayData(3)">3</button>
+                    <button id="operators" type="button" onclick="displayData('+')">+</button>
+
+                </div>
+                <div>
+                    <button type="button" onclick="displayData(0)">0</button>
+                    <button id="operators" type="button" onclick="displayData('**')">exp</button>
+                    <button id="operators" type="button" onclick="displayData('%')">%</button>
+                    <button  id="operators" type="button" onclick="findOut()" >=</button>
+
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
